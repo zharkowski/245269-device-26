@@ -48,39 +48,66 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтры товаров</h2>
         <!-- Здесь могла быть ваша форма -->
+        <span>Фильтр:</span>
+        <ul class="filters-list">
+          <li>Стоимость</li>
+          <li>Цвет</li>
+          <li>Bluetooth</li>
+        </ul>
       </section>
 
       <section class="sorting">
         <h2 class="visually-hidden">Сортировка товаров</h2>
+        <span>Сортировка</span>
+        <ul class="sorting-types-list">
+          <li><a>По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По популярности</a></li>
+        </ul>
+        <ul class="sorting-order-list">
+          <li><a><img class="usual-order" src="https://via.placeholder.com/11x10" alt="обычный порядок"></a></li>
+          <li><a href="#"><img class="reverse-order" src="https://via.placeholder.com/11x10" alt="обратный порядок"></a></li>
+        </ul>
         <!-- сортировщик -->
       </section>
 
       <section class="catalog">
-        <h2>Список товаров</h2>
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <h3>Любительская селфи-палка</h3>
-            <p class="catalog-item-image"><a href="#"><img src="https://via.placeholder.com/360x380" alt="Любительская селфи-палка"></a></p>
-            <span class="catalog-item-price">500 руб.</span>
-          </li>
-          <li class="catalog-item">
-            <h3>Профессиональная селфи-палка </h3>
-            <p class="catalog-item-image"><a href="#"><img src="https://via.placeholder.com/360x380" alt="Профессиональная селфи-палка "></a></p>
-            <span class="catalog-item-price">1 500 руб.</span>
-          </li>
-          <li class="catalog-item">
-            <h3>Непотопляемая селфи-палка</h3>
-            <p class="catalog-item-image"><a href="#"><img src="https://via.placeholder.com/360x380" alt="Непотопляемая селфи-палка"></a></p>
-            <span class="catalog-item-price">2 500 руб.</span>
-          </li>
-          <li class="catalog-item">
-            <h3>Селфи-палка «Следуй за мной»</h3>
-            <p class="catalog-item-image"><a href="#"><img src="https://via.placeholder.com/360x380" alt="Селфи-палка «Следуй за мной»"></a></p>
-            <span class="catalog-item-price">4 900 руб.</span>
-          </li>
-        </ul>
+        <h2 class="visually-hidden">Список товаров</h2>
+        <div class="items">
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <h3>Любительская селфи-палка</h3>
+              <p class="catalog-item-image"><a href="#"><img src="https://via.placeholder.com/360x380" alt="Любительская селфи-палка"></a></p>
+              <span class="catalog-item-price">500 руб.</span>
+            </li>
+            <li class="catalog-item">
+              <h3>Профессиональная селфи-палка </h3>
+              <p class="catalog-item-image"><a href="#"><img src="https://via.placeholder.com/360x380" alt="Профессиональная селфи-палка "></a></p>
+              <span class="catalog-item-price">1 500 руб.</span>
+            </li>
+            <li class="catalog-item">
+              <h3>Непотопляемая селфи-палка</h3>
+              <p class="catalog-item-image"><a href="#"><img src="https://via.placeholder.com/360x380" alt="Непотопляемая селфи-палка"></a></p>
+              <span class="catalog-item-price">2 500 руб.</span>
+            </li>
+            <li class="catalog-item">
+              <h3>Селфи-палка «Следуй за мной»</h3>
+              <p class="catalog-item-image"><a href="#"><img src="https://via.placeholder.com/360x380" alt="Селфи-палка «Следуй за мной»"></a></p>
+              <span class="catalog-item-price">4 900 руб.</span>
+            </li>
+          </ul>
+        </div>
 
         <!-- Пагинация -->
+        <div class="pagination">
+          <a class="previous-page" href="#">Назад</a>
+          <ul class="pages-list">
+            <li><a>1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          </ul>
+          <a class="naxt-page" href="#">Вперед</a>
+        </div>
       </section>
     </main>
 
