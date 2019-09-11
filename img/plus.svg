@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>plus</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.3">
+        <g id="Catalog" transform="translate(-430.000000, -155.000000)" fill="#272525">
+            <g id="header-catalog" transform="translate(140.000000, 22.000000)">
+                <g id="plus" transform="translate(290.000000, 133.000000)">
+                    <g id="Shape">
+                        <polygon fill-rule="nonzero" points="16 7 9 7 9 0 7 0 7 7 0 7 0 9 7 9 7 16 9 16 9 9 16 9"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
