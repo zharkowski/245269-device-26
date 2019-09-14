@@ -20,7 +20,7 @@
         <ul class="main-site-navigation">
           <li>
             <a href="#">Каталог товаров</a>
-            <ul class="catalog-navigation">
+            <ul class="dropdown">
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="catalog.html">Моноподы для селфи</a></li>
               <li><a href="#">Экшн-камеры</a></li>
@@ -219,5 +219,35 @@
       <p class="footer-contacts-number">Тел.: +7 (495) 495-95-95</p>
       <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy"></a>
     </footer>
+
+    <section class="modal modal-write-us">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label>
+            Ваше имя:
+            <input type="text" name="user-name" value="" placeholder="Имя Фамилия">
+          </label>
+        </p>
+        <p>
+          <label>
+            Ваш e-mail:
+            <input type="text" name="user-email" value="" placeholder="email@example.com">
+          </label>
+        </p>
+        <p>
+          <label>
+            Текст письма:
+            <textarea name="user-message" id="user-messsage-id" cols="30" rows="1" placeholder="В свободной форме"></textarea>
+          </label>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+      <button type="button">Закрыть</button>
+    </section>
+
+    <section class="modal modal-map">
+      <img src="img/map-big.png" alt="г. Москва, ул. Строителей, 15 " width="960" height="559">
+      <button type="button">Закрыть</button>
+    </section>
   </body>
 </html>

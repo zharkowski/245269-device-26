@@ -21,7 +21,7 @@
       <ul class="main-site-navigation">
         <li>
           <a href="#">Каталог товаров</a>
-          <ul class="catalog-navigation">
+          <ul class="dropdown">
             <li><a href="#">Виртуальная реальность</a></li>
             <li><a href="catalog.html">Моноподы для селфи</a></li>
             <li><a href="#">Экшн-камеры</a></li>
@@ -47,13 +47,63 @@
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтры товаров</h2>
-        <!-- Здесь могла быть ваша форма -->
-        <span>Фильтр:</span>
-        <ul class="filters-list">
-          <li>Стоимость</li>
-          <li>Цвет</li>
-          <li>Bluetooth</li>
-        </ul>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="price-filter">
+            <legend>Стоимость</legend>
+          </fieldset>
+          <fieldset class="color-filter">
+            <legend>Цвет</legend>
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" name="color-black" checked>
+                  Черный
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="color-white">
+                  Белый
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="color-blue" checked>
+                  Синий
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="color-red" checked>
+                  Красный
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="color-pink">
+                  Розовый
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="bluetooth-filter">
+            <ul>
+              <li>
+                <label>
+                  <input type="radio" name="bluetooth" value="on" checked>
+                  Есть
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="bluetooth" value="off">
+                  Нет
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </section>
 
       <section class="sorting">
