@@ -11,7 +11,7 @@
       <ul class="main-user-navigation">
         <li class="search">
           <form action="https://echo.htmlacademy.ru" method="post">
-            <input type="search" name="search" value="" placeholder="Поиск по сайту">
+            <input type="search" name="search" placeholder="Поиск по сайту">
           </form>
         </li>
         <li class="main-user-link button"><a href="#">Валентин Петухов</a></li>
@@ -56,50 +56,37 @@
             <legend>Цвет</legend>
             <ul>
               <li>
-                <label>
-                  <input type="checkbox" name="color-black" checked>
-                  Черный
-                </label>
+                <input id="color-black-id" type="checkbox" name="color-black" checked>
+                <label for="color-black-id">Черный</label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="color-white">
-                  Белый
-                </label>
+                <input id="color-white-id" type="checkbox" name="color-white">
+                <label for="color-white-id">Белый</label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="color-blue" checked>
-                  Синий
-                </label>
+                <input id="color-blue-id" type="checkbox" name="color-blue" checked>
+                <label for="color-blue-id">Синий</label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="color-red" checked>
-                  Красный
-                </label>
+                <input id="color-red-id" type="checkbox" name="color-red" checked>
+                <label for="color-red-id">Красный</label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="color-pink">
-                  Розовый
-                </label>
+                <input id="color-pink-id" type="checkbox" name="color-pink">
+                <label for="color-pink-id">Розовый</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="bluetooth-filter">
+            <legend>Bluetooth</legend>
             <ul>
               <li>
-                <label>
-                  <input type="radio" name="bluetooth" value="on" checked>
-                  Есть
-                </label>
+                <input id="bluetooth-on-id" type="radio" name="bluetooth" value="on" checked>
+                <label for="bluetooth-on-id">Есть</label>
               </li>
               <li>
-                <label>
-                  <input type="radio" name="bluetooth" value="off">
-                  Нет
-                </label>
+                <input id="bluetooth-off-id" type="radio" name="bluetooth" value="off">
+                <label for="bluetooth-off-id">Нет</label>
               </li>
             </ul>
           </fieldset>
@@ -119,7 +106,6 @@
           <li><a><img class="usual-order" src="img/icon-up-dir.svg" width="11" height="10" alt="обычный порядок"></a></li>
           <li><a href="#"><img class="reverse-order" src="img/icon-down-dir.svg" width="11" height="10" alt="обратный порядок"></a></li>
         </ul>
-        <!-- Сортировщик -->
       </section>
 
       <section class="catalog">

@@ -10,7 +10,7 @@
       <ul class="main-user-navigation">
         <li class="search">
           <form action="https://echo.htmlacademy.ru" method="post">
-            <input type="search" name="search" value="" placeholder="Поиск по сайту">
+            <input type="search" name="search" placeholder="Поиск по сайту">
           </form>
         </li>
         <li class="main-login-link button"><a href="#">Войти</a></li>
@@ -224,22 +224,16 @@
     <section class="modal modal-write-us">
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label>
-            Ваше имя:
-            <input type="text" name="user-name" value="" placeholder="Имя Фамилия">
-          </label>
+          <label for="user-name-id">Ваше имя:</label>
+          <input id="user-name-id" type="text" name="user-name" placeholder="Имя Фамилия">
         </p>
         <p>
-          <label>
-            Ваш e-mail:
-            <input type="text" name="user-email" value="" placeholder="email@example.com">
-          </label>
+          <label for="user-email-id">Ваш e-mail:</label>
+          <input id="user-email-id" type="email" name="user-email" placeholder="email@example.com">
         </p>
         <p>
-          <label>
-            Текст письма:
-            <textarea name="user-message" id="user-messsage-id" cols="30" rows="1" placeholder="В свободной форме"></textarea>
-          </label>
+          <label for="user-message-id">Текст письма:</label>
+          <textarea id="user-message-id" name="user-message" cols="30" rows="1" placeholder="В свободной форме"></textarea>
         </p>
         <button type="submit">Отправить</button>
       </form>
