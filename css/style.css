@@ -536,7 +536,49 @@ a {
   content: url("../img/checkbox-off.svg");
 }
 
+.color-checkbox:hover + label::before {
+  opacity: 0.6;
+}
+
+.color-checkbox:active + label::before {
+  content: url("../img/checkbox-on.svg");
+  opacity: 1;
+}
+
 .color-checkbox:checked + label::before {
+  content: url("../img/checkbox-on.svg");
+}
+
+.color-checkbox:checked:hover + label::before {
+  opacity: 0.6;
+}
+
+.color-checkbox:checked:active + label::before {
+  content: url("../img/checkbox-off.svg");
+  opacity: 1;
+}
+
+.color-checkbox:disabled + label {
+  color: #a6a6a6;
+}
+
+.color-checkbox:disabled + label::before {
+  opacity: 0.25;
+}
+
+.color-checkbox:active + label::before {
+  content: url("../img/checkbox-off.svg");
+}
+
+.color-checkbox:checked:disabled + label {
+  color: #a6a6a6;
+}
+
+.color-checkbox:checked:disabled + label::before {
+  opacity: 0.25;
+}
+
+.color-checkbox:checked:active + label::before {
   content: url("../img/checkbox-on.svg");
 }
 
@@ -551,8 +593,28 @@ a {
   content: url("../img/radio-off.svg");
 }
 
+.bluetooth-radio:hover + label::before {
+  opacity: 0.6;
+}
+
+.bluetooth-radio:active + label::before {
+  content: url("../img/radio-on.svg");
+}
+
 .bluetooth-radio:checked + label::before {
   content: url("../img/radio-on.svg");
+}
+
+.bluetooth-radio:disabled + label {
+  color: #a6a6a6;
+}
+
+.bluetooth-radio:disabled + label::before {
+  opacity: 0.25;
+}
+
+.bluetooth-radio:disabled:active + label::before {
+  content: url("../img/radio-off.svg");
 }
 
 .catalog-list {
@@ -570,4 +632,90 @@ a {
   font-size: 16px;
   line-height: 24px;
   color: #464646;
+}
+
+.sorting-types-list,
+.sorting-order-list {
+  list-style: none;
+}
+
+.sorting-types-list a {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.sorting-order-list a {
+  opacity: 0.2;
+}
+
+.sorting-types-list a:hover{
+  opacity: 0.6;
+}
+
+.sorting-order-list a:hover {
+  opacity: 0.4;
+}
+
+.sorting-types-list a:active,
+.sorting-order-list a:active {
+  opacity: 1;
+}
+
+li.current-sorting-type a,
+li.current-sorting-order a,
+li.current-sorting-type a:hover,
+li.current-sorting-order a:hover,
+li.current-sorting-type a:active,
+li.current-sorting-order a:active {
+  opacity: 1;
+}
+
+.pagination {
+  background-color: rgba(0, 0, 0, 0.08);
+  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.pages-list {
+  list-style: none;
+}
+
+.pages-list a {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.pages-list a:hover {
+  opacity: 0.6;
+}
+
+.pages-list a:active {
+  opacity: 1;
+}
+
+.current-page a:hover,
+.previous-page a:hover,
+.next-page a:hover,
+.current-page a:active,
+.previous-page a:active,
+.next-page a:active {
+  opacity: 1;
+}
+
+.previous-page:hover,
+.next-page:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.previous-page:active a,
+.next-page:active a {
+  opacity: 0.3;
+}
+
+.previous-page a,
+.next-page a,
+.current-page a {
+  opacity: 1;
 }

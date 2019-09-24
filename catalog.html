@@ -100,12 +100,12 @@
       <section class="sorting">
         <h2>Сортировка:</h2>
         <ul class="sorting-types-list">
-          <li><a>По цене</a></li>
+          <li class="current-sorting-type"><a>По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По популярности</a></li>
         </ul>
         <ul class="sorting-order-list">
-          <li><a><img class="usual-order" src="img/icon-up-dir.svg" width="11" height="10" alt="обычный порядок"></a></li>
+          <li class="current-sorting-order"><a><img class="usual-order" src="img/icon-up-dir.svg" width="11" height="10" alt="обычный порядок"></a></li>
           <li><a href="#"><img class="reverse-order" src="img/icon-down-dir.svg" width="11" height="10" alt="обратный порядок"></a></li>
         </ul>
       </section>
@@ -116,7 +116,7 @@
           <ul class="catalog-list">
             <li class="catalog-item">
               <h3>Любительская селфи-палка</h3>
-              <a href="#"><img src="img/item-1.jpg.png" width="360" height="380" alt="Любительская селфи-палка"></a>
+              <img src="img/item-1.jpg.png" width="360" height="380" alt="Любительская селфи-палка">
               <span class="catalog-item-price">500 руб.</span>
             </li>
             <li class="catalog-item">
@@ -136,13 +136,14 @@
             </li>
           </ul>
         </div>
+
         <div class="pagination">
           <ul class="pages-list">
-            <li><a class="previous-page" href="#">Назад</a></li>
-            <li><a>1</a></li>
+            <li class="previous-page"><a href="#">Назад</a></li>
+            <li class="current-page"><a>1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
-            <li><a class="naxt-page" href="#">Вперед</a></li>
+            <li class="next-page"><a href="#">Вперед</a></li>
           </ul>
         </div>
       </section>
