@@ -123,17 +123,23 @@ a {
   opacity: 0.3;
 }
 
+.main-logout-link {
+  opacity: 0.3;
+}
+
 .main-login-link:hover,
 .main-logout-link:hover,
 .main-compare-link:hover,
-.main-cart-link:hover {
+.main-cart-link:hover,
+.user-name-link:hover {
   opacity: 0.6;
 }
 
 .main-login-link:active,
 .main-logout-link:active,
 .main-compare-link:active,
-.main-cart-link:active {
+.main-cart-link:active,
+.user-name-link:active {
   opacity: 0.3;
 }
 
@@ -175,7 +181,7 @@ a {
 
 .slide-number {
   font-family: "Gilroy-ExtraBold", "Arial", sans-serif;
-  font-size: 179.2px;
+  font-size: 179px;
   line-height: 179px;
   color: #000000; /*должен быть белым в итоговой верстке*/
 }
@@ -632,6 +638,11 @@ a {
   font-size: 16px;
   line-height: 24px;
   color: #464646;
+}
+
+.sorting-type-radio,
+.sorting-order-radio {
+  display: none;
 }
 
 .sorting-types-list,

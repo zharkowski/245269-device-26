@@ -16,7 +16,8 @@
           <button class="search-button" type="submit">Найти</button>
         </form>
       </li>
-      <li class="main-login-link nav-button"><a href="#">Войти</a></li>
+      <li class="user-name-link nav-button"><a href="#">Валентин Петухов</a></li>
+      <li class="main-logout-link nav-button"><a href="#">Выйти</a></li>
       <li class="main-compare-link nav-button"><a href="#">Сравнить</a></li>
       <li class="main-cart-link nav-button"><a href="#">Корзина</a></li>
     </ul>
@@ -53,7 +54,7 @@
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="price-filter">
             <legend>Стоимость</legend>
-            <input type="range" name="price" value="0, 5000" min="0" max="9000">
+            <input type="range" name="price" value="0" min="0" max="9000">
           </fieldset>
           <fieldset class="color-filter">
             <legend>Цвет</legend>
@@ -100,13 +101,30 @@
       <section class="sorting">
         <h2>Сортировка:</h2>
         <ul class="sorting-types-list">
-          <li class="current-sorting-type"><a>По цене</a></li>
-          <li><a href="#">По типу</a></li>
-          <li><a href="#">По популярности</a></li>
+          <li class="current-sorting-type">
+            <input class="sorting-type-radio" id="sorting-price-radio" type="radio" name="sorting-type" value="by-price" checked>
+            <label for="sorting-price-radio"><a>По цене</a></label>
+          </li>
+          <li>
+            <input class="sorting-type-radio" id="sorting-type-radio" type="radio" name="sorting-type" value="by-type">
+            <label for="sorting-type-radio"><a href="#">По типу</a></label>
+          </li>
+          <li>
+            <input class="sorting-type-radio" id="sorting-popularity-radio" type="radio" name="sorting-type" value="by-popularity">
+            <label for="sorting-popularity-radio"><a href="#">По популярности</a></label>
+          </li>
         </ul>
+
+
         <ul class="sorting-order-list">
-          <li class="current-sorting-order"><a><img class="usual-order" src="img/icon-up-dir.svg" width="11" height="10" alt="обычный порядок"></a></li>
-          <li><a href="#"><img class="reverse-order" src="img/icon-down-dir.svg" width="11" height="10" alt="обратный порядок"></a></li>
+          <li class="current-sorting-order">
+            <input class="sorting-order-radio" id="usual-order-radio" type="radio" name="sorting-order" value="usual-order" checked>
+            <label for="usual-order-radio"><a><img class="usual-order" src="img/icon-up-dir.svg" width="11" height="10" alt="обычный порядок"></a></label>
+          </li>
+          <li>
+            <input class="sorting-order-radio" id="reverse-order-radio" type="radio" name="sorting-order" value="reverse-order">
+            <label for="reverse-order-radio"><a href="#"><img class="reverse-order" src="img/icon-down-dir.svg" width="11" height="10" alt="обратный порядок"></a></label>
+          </li>
         </ul>
       </section>
 
