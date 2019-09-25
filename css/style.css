@@ -650,34 +650,43 @@ a {
   list-style: none;
 }
 
-.sorting-types-list a {
+.sorting-type-radio + label {
   color: #000000;
   opacity: 0.3;
 }
 
-.sorting-order-list a {
+.sorting-order-radio + label {
   opacity: 0.2;
 }
 
-.sorting-types-list a:hover{
+.sorting-type-radio + label:hover{
   opacity: 0.6;
 }
 
-.sorting-order-list a:hover {
+.sorting-order-radio + label:hover {
   opacity: 0.4;
 }
 
-.sorting-types-list a:active,
-.sorting-order-list a:active {
+.sorting-type-radio + label:active,
+.sorting-order-radio + label:active {
   opacity: 1;
 }
 
-li.current-sorting-type a,
-li.current-sorting-order a,
-li.current-sorting-type a:hover,
-li.current-sorting-order a:hover,
-li.current-sorting-type a:active,
-li.current-sorting-order a:active {
+ /*li.sorting-types-list a,*/
+ /*li.current-sorting-order a,*/
+ /*li.current-sorting-type a:hover,*/
+ /*li.current-sorting-order a:hover,*/
+ /*li.current-sorting-type a:active,*/
+ /*li.current-sorting-order a:active {*/
+   /*opacity: 1;*/
+ /*}*/
+
+.sorting-type-radio:checked + label,
+.sorting-order-radio:checked + label,
+.sorting-type-radio:checked + label:hover,
+.sorting-order-radio:checked + label:hover,
+.sorting-type-radio:checked + label:active,
+.sorting-order-radio:checked + label:active {
   opacity: 1;
 }
 
