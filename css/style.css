@@ -92,7 +92,7 @@ a {
   line-height: 30px;
 
   background-color: transparent;
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 .search-input:hover {
@@ -165,7 +165,7 @@ a {
 
 .site-nav-element:hover .dropdown,
 .dropdown:hover {
-  display: block;
+  display: flex;
 }
 
 .dropdown-element a {
@@ -672,15 +672,6 @@ a {
   opacity: 1;
 }
 
- /*li.sorting-types-list a,*/
- /*li.current-sorting-order a,*/
- /*li.current-sorting-type a:hover,*/
- /*li.current-sorting-order a:hover,*/
- /*li.current-sorting-type a:active,*/
- /*li.current-sorting-order a:active {*/
-   /*opacity: 1;*/
- /*}*/
-
 .sorting-type-radio:checked + label,
 .sorting-order-radio:checked + label,
 .sorting-type-radio:checked + label:hover,
@@ -738,4 +729,159 @@ a {
 .next-page a,
 .current-page a {
   opacity: 1;
+}
+
+/* ------- Сеточные стили --------- */
+
+html,
+body {
+  /* Временно для сетки */
+  min-width: 1440px;
+  min-height: 2795px;
+}
+
+body {
+   /*Временно для сетки*/
+  /*background-image: url("../img/index-page-grid-open-menu.jpg");*/
+  /*background-size: 1440px auto;*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: top center;*/
+}
+
+.header-main {
+  width: 1160px;
+  margin: 0 auto;
+  margin-top: 40px;
+
+  /* Временно для сетки */
+  /*background-color: transparent;*/
+  min-height: 186px;
+}
+
+.header-wrapper {
+  position: relative;
+  width: 1044px;
+  padding: 40px 58px;
+  padding-bottom: 15px;
+
+  /* Временно для сетки */
+  min-height: 55px;
+}
+
+.header-logo-wrapper {
+  position: absolute;
+  width: 163px;
+  height: 36px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  top: -18px;
+
+  /* Временно для сетки */
+  min-height: 36px;
+}
+
+.main-user-navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 1044px;
+
+  /* Временно для сетки */
+  min-height: 36px;
+}
+
+.main-navigation {
+  margin: 30px 0;
+  padding: 0;
+  width: 1044px;
+
+  /* Временно для сетки */
+  min-height: 36px;
+}
+
+.search {
+  width: 440px;
+  margin-right: auto;
+}
+
+.main-cart-link {
+  width: 95px;
+  margin-left: 30px;
+}
+
+.main-compare-link {
+  width: 100px;
+  margin-left: 200px;
+}
+
+.main-login-link {
+  width: 90px;
+}
+
+.main-site-navigation {
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+  /* Временно для сетки */
+  min-height: 36px;
+}
+
+.dropdown-catalog-nav {
+  width: 260px;
+  margin-right: auto;
+}
+
+.delivery-nav {
+  width: 125px;
+}
+
+.warranty-nav {
+  width: 115px;
+  margin-left: 35px;
+}
+
+.contacts-nav {
+  width: 120px;
+  margin-left: 110px;
+}
+
+.dropdown-column ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dropdown {
+  position: absolute;
+  /*flex-direction: column;*/
+  /*flex-wrap: wrap;*/
+  /*justify-content: flex-start;*/
+  box-sizing: border-box;
+  margin: 0;
+  padding: 15px 58px;
+  width: 1160px;
+  height: 155px;
+  left: 0;
+  top: 143px;
+
+  background-color: #f8e297;
+
+  /* Временно для сетки */
+  /*min-height: 129px;*/
+  /*display: flex;*/
+  /*background-color: transparent;*/
+}
+
+.dropdown-element {
+  width: 220px;
+  /*margin-bottom: 10px;*/
+
+  /* Временно для сетки */
+  min-height: 36px;
+}
+
+.dropdown-element a {
+  letter-spacing: 0.15px;
 }
