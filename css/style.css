@@ -71,28 +71,18 @@ a {
 }
 
 .search-input {
+  box-sizing: border-box;
+
   font-size: 15px;
   line-height: 30px;
 
   background-color: transparent;
   border: none;
+  border-bottom: 2px solid transparent;
 }
 
 .search-input:placeholder-shown {
   opacity: 0.3;
-}
-
-.search-button {
-  display: none;
-  /*opacity: 0;*/
-
-  font-family: "OpenSans-Light", "Arial", sans-serif;
-  color: #000000;
-  font-size: 15px;
-  line-height: 30px;
-
-  background-color: transparent;
-  outline: 2px solid #000000;
 }
 
 .search-input:hover {
@@ -107,7 +97,19 @@ a {
 .search-input:focus + .search-button,
 .search-button:active {
   display: inline-block;
-  /*opacity: 1;*/
+}
+
+.search-button {
+  box-sizing: border-box;
+  display: none;
+
+  font-family: "OpenSans-Light", "Arial", sans-serif;
+  color: #000000;
+  font-size: 15px;
+  line-height: 30px;
+
+  background-color: transparent;
+  outline: 2px solid #000000;
 }
 
 .search-button:hover {
@@ -742,10 +744,10 @@ body {
 
 body {
    /*Временно для сетки*/
-  /*background-image: url("../img/index-page-grid-open-menu.jpg");*/
-  /*background-size: 1440px auto;*/
-  /*background-repeat: no-repeat;*/
-  /*background-position: top center;*/
+  background-image: url("../img/index-page-grid.jpg");
+  background-size: 1440px auto;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .header-main {
@@ -754,7 +756,7 @@ body {
   margin-top: 40px;
 
   /* Временно для сетки */
-  /*background-color: transparent;*/
+  background-color: transparent;
   min-height: 186px;
 }
 
@@ -812,11 +814,22 @@ body {
 
 .main-compare-link {
   width: 100px;
-  margin-left: 200px;
+  /*margin-left: 200px;*/
 }
 
 .main-login-link {
   width: 90px;
+  margin-right: 200px;
+}
+
+.user-name-link {
+  width: 170px;
+  margin-right: 10px;
+}
+
+.main-logout-link {
+  width: 55px;
+  margin-right: 50px;
 }
 
 .main-site-navigation {
@@ -871,7 +884,7 @@ body {
   /* Временно для сетки */
   /*min-height: 129px;*/
   /*display: flex;*/
-  /*background-color: transparent;*/
+  background-color: transparent;
 }
 
 .dropdown-element {
