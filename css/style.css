@@ -1958,7 +1958,16 @@ body {
   margin: 0 auto;
 }
 
-.modal button {
+.modal-close {
   background: transparent;
   border: none;
+  opacity: 0.5;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.3;
 }
