@@ -19,7 +19,7 @@
           <li class="search">
             <form action="https://echo.htmlacademy.ru" method="post">
               <input class="search-input" type="search" name="search" placeholder="Поиск по сайту">
-              <button class="search-button" type="submit">Найти</button>
+              <button class="search-button" type="submit"><span>Найти</span></button>
             </form>
           </li>
           <li class="main-login-link nav-button">
@@ -89,7 +89,7 @@
         <h2 class="visually-hidden">Интересные товары</h2>
         <ul class="slides-list">
           <li class="slide-1">
-            <input class="visually-hidden" id="slide-1" name="slider" type="radio" checked>
+            <input class="visually-hidden slide-1-input" id="slide-1" name="slider" type="radio" checked>
             <div class="slide-content">
               <div class="slide-img-wrapper">
                 <a><img class="slide-1-img" src="img/slider-product-1.png" width="384" height="486" alt="Сэлфи-палка"></a>
@@ -100,7 +100,7 @@
                 <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине.</p>
                 <p class="slide-description">Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                 <div class="btn-and-pagination-wrapper">
-                  <a class="button slide-button" href="#">
+                  <a href="#">
                     <div class="button slide-button"><span>Подробнее</span></div>
                   </a>
                   <div class="pagination-wrapper">
@@ -133,7 +133,7 @@
             </div>
           </li>
           <li class="slide-2">
-            <input class="visually-hidden" id="slide-2" name="slider" type="radio">
+            <input class="visually-hidden slide-2-input" id="slide-2" name="slider" type="radio">
             <div class="slide-content">
               <div class="slide-img-wrapper">
                 <a><img class="slide-2-img" src="img/slider-product-2.png" width="345" height="485" alt="Фитнес-браслет"></a>
@@ -143,7 +143,7 @@
                 <p class="slide-title">Худеем<br>правильно!</p>
                 <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету. </p>
                 <div class="btn-and-pagination-wrapper">
-                  <a class="button slide-button" href="#"><div class="button"><span>Подробнее</span></div></a>
+                  <a href="#"><div class="button slide-button"><span>Подробнее</span></div></a>
                   <div class="pagination-wrapper">
                     <ul class="slider-pagination">
                       <li class="slider-pagination-item">
@@ -174,7 +174,7 @@
             </div>
           </li>
           <li class="slide-3">
-            <input class="visually-hidden" id="slide-3" name="slider" type="radio">
+            <input class="visually-hidden slide-3-input" id="slide-3" name="slider" type="radio">
             <div class="slide-content">
               <div class="slide-img-wrapper">
                 <a><img class="slide-3-img" src="img/slider-product-3.png" width="526" height="334" alt="Квадрокоптер"></a>
@@ -184,7 +184,7 @@
                 <p class="slide-title">Порхает как бабочка, жалит как пчела!</p>
                 <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
                 <div class="btn-and-pagination-wrapper">
-                  <a class="button slide-button" href="#"><div class="button"><span>Подробнее</span></div></a>
+                  <a href="#"><div class="button slide-button"><span>Подробнее</span></div></a>
                   <div class="pagination-wrapper">
                     <ul class="slider-pagination">
                       <li class="slider-pagination-item">
@@ -286,24 +286,24 @@
       <section class="services-slider-wrapper">
         <div class="services-slider">
           <h2 class="visually-hidden">Услуги</h2>
-          <input class="visually-hidden" id="services-slide-1" name="services-slider" type="radio" checked>
-          <input class="visually-hidden" id="services-slide-2" name="services-slider" type="radio">
-          <input class="visually-hidden" id="services-slide-3" name="services-slider" type="radio">
+          <input class="visually-hidden services-slide-1-input" id="services-slide-1" name="services-slider" type="radio" checked>
+          <input class="visually-hidden services-slide-2-input" id="services-slide-2" name="services-slider" type="radio">
+          <input class="visually-hidden services-slide-3-input" id="services-slide-3" name="services-slider" type="radio">
           <ul class="services-slider-pagination">
             <li class="services-slider-pagination-item">
-              <label for="services-slide-1">
-                <div class="button services-button delivery-button"><span>Доставка</span></div>
-              </label>
+                <label for="services-slide-1">
+                  <span class="button services-button delivery-button">Доставка</span>
+                </label>
             </li>
             <li class="services-slider-pagination-item">
               <label for="services-slide-2">
-                <div class="button services-button warranty-button"><span>Гарантия</span></div>
+                <span class="button services-button warranty-button">Гарантия</span>
               </label>
             </li>
             <li class="services-slider-pagination-item">
-              <label for="services-slide-3">
-                <div class="button services-button credit-button"><span>Кредит</span></div>
-              </label>
+                <label for="services-slide-3">
+                  <span class="button services-button credit-button">Кредит</span>
+                </label>
             </li>
           </ul>
           <ul class="services-slides-list">
@@ -342,7 +342,7 @@
         <h2 class="visually-hidden">Логотипы</h2>
         <ul class="logotypes-list">
           <li>
-            <a href="https://www.dji.com/ru"><img class="product-logo dgi-logo" src="img/dji.png" width="260" height="100" alt="DGI"></a>
+            <a href="https://www.dji.com/ru"><img class="product-logo dji-logo" src="img/dji.png" width="260" height="100" alt="DJI"></a>
           </li>
           <li>
             <a href="http://www.sp-gadgets.com"><img class="product-logo sp-gadgets-logo" src="img/sp-gadgets.png" width="260" height="100" alt="SP Gadgets"></a>
@@ -360,14 +360,14 @@
         <section class="about-us">
           <h2>О нас</h2>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. </p>
-          <p>Мы можем доставить товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями: </p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями: </p>
           <ul class="delivery-companies">
             <li><a href="#">Деловые Линии</a></li>
             <li><a href="#">Автотрейдинг</a></li>
             <li><a href="#">ЖелДорЭкспедиция</a></li>
           </ul>
-          <a class="button" href="#">
-            <div class="button"><span>Подробнее о нас</span></div>
+          <a href="#">
+            <div class="button about-us-button"><span>Подробнее о нас</span></div>
           </a>
         </section>
 
@@ -457,7 +457,7 @@
         </div>
         <div class="label-wrapper"><label for="user-message-id">Текст письма:</label></div>
         <textarea id="user-message-id" name="user-message" cols="30" rows="1" placeholder="В свободной форме"></textarea>
-        <button class="button" type="submit"><span>Отправить</span></button>
+        <button class="button modal-button" type="submit"><span>Отправить</span></button>
       </form>
       <button class="modal-close" type="button"><img src="img/modal-close.svg" alt="Закрыть" width="55" height="55"></button>
     </section>

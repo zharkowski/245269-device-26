@@ -87,9 +87,7 @@
 
     <main class="container">
       <div class="page-nav-wrapper">
-        <h1 class="page-title">
-          Моноподы для селфи
-        </h1>
+        <h1 class="page-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
           <li class="index-page-link">
             <a href="index.html">Главная</a>
@@ -104,6 +102,7 @@
       </div>
 
       <section class="catalog-section">
+        <h2 class="visually-hidden">Каталог</h2>
         <div class="catalog-header-wrapper">
           <header class="catalog-header">
             <div class="catalog-header-filter">
@@ -142,14 +141,25 @@
           </header>
         </div>
         <div class="catalog-main-wrapper">
-          <main class="catalog-main">
-            <h2 class="visually-hidden">Каталог</h2>
+          <div class="catalog-main">
             <section class="filters">
               <h3 class="visually-hidden">Фильтры</h3>
               <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
               <fieldset class="price-filter">
                 <legend>Стоимость</legend>
-                <input type="range" name="price" value="0" min="0" max="9000">
+                <div class="price-range">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                    <label class="max-price">до <input type="text" name="max-price" value="5000"></label>
+                  </div>
+                </div>
               </fieldset>
               <fieldset class="color-filter">
                 <legend>Цвет</legend>
@@ -198,7 +208,11 @@
                 <ul class="catalog-list">
                   <li class="catalog-item">
                     <div class="item-img-wrapper">
-                      <img src="img/item-1.jpg.png" width="360" height="380" alt="Любительская селфи-палка">
+                      <img src="img/item-1.png" width="360" height="380" alt="Любительская селфи-палка">
+                      <div class="item-buttons-wrapper">
+                        <button class="button to-cart-button"><span class="to-cart">В корзину</span></button>
+                        <button class="compare-button"><span class="compare-span">Добавить к сравнению</span></button>
+                      </div>
                     </div>
                     <div class="item-wrapper">
                       <h3>Любительская селфи-палка</h3>
@@ -207,7 +221,11 @@
                   </li>
                   <li class="catalog-item">
                     <div class="item-img-wrapper">
-                      <img src="img/item-2.jpg.png" width="360" height="380" alt="Профессиональная селфи-палка ">
+                      <img src="img/item-2.png" width="360" height="380" alt="Профессиональная селфи-палка ">
+                      <div class="item-buttons-wrapper">
+                        <button class="button to-cart-button"><span class="to-cart">В корзину</span></button>
+                        <button class="compare-button"><span class="compare-span">Добавить к сравнению</span></button>
+                      </div>
                     </div>
                     <div class="item-wrapper">
                       <h3>Профессиональная селфи-палка </h3>
@@ -216,7 +234,11 @@
                   </li>
                   <li class="catalog-item">
                     <div class="item-img-wrapper">
-                      <img src="img/item-3.jpg.png" width="360" height="380" alt="Непотопляемая селфи-палка">
+                      <img src="img/item-3.png" width="360" height="380" alt="Непотопляемая селфи-палка">
+                      <div class="item-buttons-wrapper">
+                        <button class="button to-cart-button"><span class="to-cart">В корзину</span></button>
+                        <button class="compare-button"><span class="compare-span">Добавить к сравнению</span></button>
+                      </div>
                     </div>
                     <div class="item-wrapper">
                       <h3>Непотопляемая селфи-палка</h3>
@@ -225,7 +247,11 @@
                   </li>
                   <li class="catalog-item new-item">
                     <div class="item-img-wrapper">
-                      <img src="img/item-4.jpg.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                      <img src="img/item-4.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                      <div class="item-buttons-wrapper">
+                        <button class="button to-cart-button"><span class="to-cart">В корзину</span></button>
+                        <button class="compare-button"><span class="compare-span">Добавить к сравнению</span></button>
+                      </div>
                     </div>
                     <div class="item-wrapper">
                       <h3>Селфи-палка «Следуй за мной»</h3>
@@ -255,7 +281,7 @@
                 </ul>
               </div>
             </section>
-          </main>
+          </div>
         </div>
       </section>
 
