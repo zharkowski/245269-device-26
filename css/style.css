@@ -683,6 +683,7 @@ input:checked + .slide-content {
 }
 
 .button {
+  position: relative;
   box-sizing: border-box;
   height: 40px;
   padding: 8px 20px;
@@ -1288,6 +1289,8 @@ input:checked + .slide-content {
   content: url("../img/user-yellow.svg");
   position: absolute;
 
+  width: 13px;
+  height: 12px;
   left: 13px;
   top: 3px;
 }
@@ -1308,6 +1311,8 @@ input:checked + .slide-content {
   content: url("../img/user-yellow.svg");
   position: absolute;
 
+  width: 13px;
+  height: 12px;
   left: 11px;
   top: 3px;
 }
@@ -1323,6 +1328,8 @@ input:checked + .slide-content {
   content: url("../img/compare-yellow.svg");
   position: absolute;
 
+  width: 10px;
+  height: 10px;
   left: 11px;
   top: 3px;
 }
@@ -1338,6 +1345,8 @@ input:checked + .slide-content {
   content: url("../img/cart-yellow.svg");
   position: absolute;
 
+  width: 12px;
+  height: 12px;
   left: 8px;
   top: 3px;
 }
@@ -1374,7 +1383,7 @@ input:checked + .slide-content {
 
 .modal input:focus {
   background-color: #ffffff;
-  border: 3px solid #f0c52e;
+  outline: 3px solid #f0c52e;
   color: #000000;
 }
 
@@ -1401,6 +1410,12 @@ input:checked + .slide-content {
 
 .modal textarea:hover {
   opacity: 0.8;
+}
+
+.modal textarea:focus {
+  background-color: #ffffff;
+  outline: 3px solid #f0c52e;
+  color: #000000;
 }
 
 .inner-page h1 {
