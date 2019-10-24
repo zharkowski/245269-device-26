@@ -26,8 +26,48 @@ url("../fonts/opensans.woff2") format("woff2");
 url("../fonts/opensanslight.woff2") format("woff2");
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 body {
-  min-height: 2795px;
+  min-height: 2755px;
   margin: 0;
   padding: 0;
 
@@ -390,6 +430,7 @@ a {
 }
 
 .site-nav-element:hover .dropdown,
+.dropdown-link:focus + .dropdown,
 .dropdown:hover {
   display: flex;
   flex-wrap: wrap;
@@ -699,6 +740,12 @@ input:checked + .slide-content {
   border: none;
 
   background: linear-gradient(0deg, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
+
+  cursor: pointer;
+}
+
+button span {
+  cursor: pointer;
 }
 
 .button:hover {
@@ -728,6 +775,10 @@ input:checked + .slide-content {
 
   background: linear-gradient(0deg, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
   border: none;
+}
+
+.services-button:focus {
+  /*outline: -moz-default-color;*/
 }
 
 .delivery-button {
@@ -1113,6 +1164,7 @@ input:checked + .slide-content {
   width: 205px;
 
   text-align: right;
+  color: #ffffff;
 }
 
 
@@ -1756,10 +1808,14 @@ input:checked + .slide-content {
 .sorting-type-radio + label {
   color: #000000;
   opacity: 0.3;
+
+  cursor: pointer;
 }
 
 .sorting-order-radio + label {
   opacity: 0.2;
+
+  cursor: pointer;
 }
 
 .sorting-type-radio + label:hover{
@@ -1797,6 +1853,8 @@ input:checked + .slide-content {
 
 .sorting-order-list label {
   line-height: 65px;
+
+  cursor: pointer;
 }
 
 .sorting-by-price {
@@ -2202,15 +2260,21 @@ input:checked + .slide-content {
 }
 
 .modal-write-us {
-  position: relative;
+  position: fixed;
+
+  display: none;
   box-sizing: border-box;
+  top: 50px;
+  left: 50%;
+  margin-left: -480px;
 
   width: 960px;
   height: 558px;
-  margin: 0 auto;
   padding-top: 94px;
   padding-right: 100px;
   padding-left: 100px;
+
+  background-color: #ffffff;
 }
 
 .modal-write-us input {
@@ -2267,6 +2331,8 @@ input:checked + .slide-content {
 
 .modal-map {
   position: relative;
+  display: none;
+
   width: 960px;
   height: 559px;
   margin: 0 auto;
@@ -2288,4 +2354,14 @@ input:checked + .slide-content {
 
 .modal .button {
   width: 200px;
+}
+
+.modal-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }

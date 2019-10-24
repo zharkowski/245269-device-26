@@ -291,19 +291,19 @@
           <input class="visually-hidden services-slide-3-input" id="services-slide-3" name="services-slider" type="radio">
           <ul class="services-slider-pagination">
             <li class="services-slider-pagination-item">
-                <label for="services-slide-1">
-                  <span class="button services-button delivery-button">Доставка</span>
-                </label>
-            </li>
-            <li class="services-slider-pagination-item">
-              <label for="services-slide-2">
-                <span class="button services-button warranty-button">Гарантия</span>
+              <label for="services-slide-1">
+                <a class="button services-button delivery-button" href="#">Доставка</a>
               </label>
             </li>
             <li class="services-slider-pagination-item">
-                <label for="services-slide-3">
-                  <span class="button services-button credit-button">Кредит</span>
-                </label>
+              <label for="services-slide-2">
+                <a class="button services-button warranty-button" href="#">Гарантия</a>
+              </label>
+            </li>
+            <li class="services-slider-pagination-item">
+              <label for="services-slide-3">
+                <a class="button services-button credit-button" href="#">Кредит</a>
+              </label>
             </li>
           </ul>
           <ul class="services-slides-list">
@@ -377,7 +377,7 @@
           </h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <div class="map-wrapper"><img src="img/map.png" width="560" height="222" alt="Карта"></div>
-          <button class="button" type="button"><span>Напишите нам</span></button>
+          <button class="button write-us-link" type="button"><span>Напишите нам</span></button>
         </section>
       </div>
     </main>
@@ -416,9 +416,7 @@
               <a href="">Контакты</a>
             </li>
           </ul>
-          <p class="footer-contacts-number">
-            Тел.: +7 (495) 495-95-95
-          </p>
+          <a class="footer-contacts-number"  href="tel: +7 (495) 495-95-95">Тел.: +7 (495) 495-95-95</a>
         </div>
 
         <div class="footer-container">
@@ -444,7 +442,7 @@
 
     <section class="modal modal-write-us">
       <h2 class="visually-hidden">Напишите нам:</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="name-email-input-wrapper">
           <div class="input-wrapper">
             <label for="user-name-id">Ваше имя:</label>
@@ -467,5 +465,7 @@
       <!--<img src="img/map-big.png" alt="г. Москва, ул. Строителей, 15 " width="960" height="559">-->
       <button class="modal-close" type="button"><img src="img/modal-close.svg" alt="Закрыть" width="55" height="55"></button>
     </section>
+
+    <script src="js/modal-write-us.js"></script>
   </body>
 </html>
