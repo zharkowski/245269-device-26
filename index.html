@@ -292,17 +292,17 @@
           <ul class="services-slider-pagination">
             <li class="services-slider-pagination-item">
               <label for="services-slide-1">
-                <a class="button services-button delivery-button" href="#">Доставка</a>
+                <span class="button services-button delivery-button">Доставка</span>
               </label>
             </li>
             <li class="services-slider-pagination-item">
               <label for="services-slide-2">
-                <a class="button services-button warranty-button" href="#">Гарантия</a>
+                <span class="button services-button warranty-button">Гарантия</span>
               </label>
             </li>
             <li class="services-slider-pagination-item">
               <label for="services-slide-3">
-                <a class="button services-button credit-button" href="#">Кредит</a>
+                <span class="button services-button credit-button">Кредит</span>
               </label>
             </li>
           </ul>
@@ -376,7 +376,7 @@
             Контакты
           </h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <div class="map-wrapper"><img src="img/map.png" width="560" height="222" alt="Карта"></div>
+          <div class="map-wrapper"><img class="modal-map-link" src="img/map.png" width="560" height="222" alt="Карта"></div>
           <button class="button write-us-link" type="button"><span>Напишите нам</span></button>
         </section>
       </div>
@@ -404,7 +404,7 @@
         </div>
 
         <div class="footer-container">
-          <p class="footer-contacts-address">г. Москва, ул. Строителей, 15</p>
+          <a class="footer-contacts-address" href="https://yandex.ru/maps/-/CGDdEKzl">г. Москва, ул. Строителей, 15</a>
           <ul class="footer-site-navigation footer-list">
             <li>
               <a href="">Доставка</a>
@@ -457,15 +457,16 @@
         <textarea id="user-message-id" name="user-message" cols="30" rows="1" placeholder="В свободной форме"></textarea>
         <button class="button modal-button" type="submit"><span>Отправить</span></button>
       </form>
-      <button class="modal-close" type="button"><img src="img/modal-close.svg" alt="Закрыть" width="55" height="55"></button>
+      <button class="modal-write-us-close" type="button"><img src="img/modal-close.svg" alt="Закрыть" width="55" height="55"></button>
     </section>
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <!--<img src="img/map-big.png" alt="г. Москва, ул. Строителей, 15 " width="960" height="559">-->
-      <button class="modal-close" type="button"><img src="img/modal-close.svg" alt="Закрыть" width="55" height="55"></button>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CGDdEKzl" width="960" height="559" allowfullscreen="true"></iframe>
+      <button class="modal-map-close" type="button"><img src="img/modal-close.svg" alt="Закрыть" width="55" height="55"></button>
     </section>
 
     <script src="js/modal-write-us.js"></script>
+    <script src="js/modal-map.js"></script>
   </body>
 </html>

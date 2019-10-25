@@ -2,28 +2,28 @@
   font-family: Gilroy-ExtraBold;
   src:
     url("../fonts/gilroyextrabold.woff") format("woff");
-url("../fonts/gilroyextrabold.woff2") format("woff2");
+    url("../fonts/gilroyextrabold.woff2") format("woff2");
 }
 
 @font-face {
   font-family: Gilroy-Light;
   src:
     url("../fonts/gilroylight.woff") format("woff");
-url("../fonts/gilroylight.woff2") format("woff2");
+    url("../fonts/gilroylight.woff2") format("woff2");
 }
 
 @font-face {
   font-family: OpenSans;
   src:
     url("../fonts/opensans.woff") format("woff");
-url("../fonts/opensans.woff2") format("woff2");
+    url("../fonts/opensans.woff2") format("woff2");
 }
 
 @font-face {
   font-family: OpenSans-Light;
   src:
     url("../fonts/opensanslight.woff") format("woff");
-url("../fonts/opensanslight.woff2") format("woff2");
+    url("../fonts/opensanslight.woff2") format("woff2");
 }
 
 @keyframes bounce {
@@ -1112,6 +1112,8 @@ button span {
   margin-left: 2px;
   width: 560px;
   height: 222px;
+
+  cursor: pointer;
 }
 
 .contacts .button {
@@ -1242,6 +1244,7 @@ button span {
   font-size: 15px;
   line-height: 30px;
   text-align: left;
+  color: #ffffff;
 }
 
 .footer-list {
@@ -2264,7 +2267,7 @@ button span {
 
   display: none;
   box-sizing: border-box;
-  top: 50px;
+  top: 150px;
   left: 50%;
   margin-left: -480px;
 
@@ -2320,28 +2323,37 @@ button span {
   padding-left: 23px;
 }
 
-.modal-close {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  content: "";
-  top: 27px;
-  right: 22px;
-}
-
 .modal-map {
-  position: relative;
+  position: fixed;
   display: none;
 
+  top: 150px;
+  left: 50%;
   width: 960px;
   height: 559px;
-  margin: 0 auto;
+  margin-left: -480px;
+
+  background-color: #ffffff;
 }
 
-.modal-close {
-  background: transparent;
+.modal-map iframe {
   border: none;
+}
+
+.modal-write-us-close,
+.modal-map-close {
+  position: absolute;
+  content: "";
+
+  margin: 0;
+  padding: 0;
+  border: none;
+  top: 27px;
+  right: 22px;
+
   opacity: 0.5;
+  background: transparent;
+  cursor: pointer;
 }
 
 .modal-close:hover {
