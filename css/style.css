@@ -1,26 +1,26 @@
 @font-face {
-  font-family: Gilroy-ExtraBold;
+  font-family: "Gilroy-ExtraBold";
   src:
     url("../fonts/gilroyextrabold.woff") format("woff");
     url("../fonts/gilroyextrabold.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: Gilroy-Light;
+  font-family: "Gilroy-Light";
   src:
     url("../fonts/gilroylight.woff") format("woff");
     url("../fonts/gilroylight.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: OpenSans;
+  font-family: "OpenSans";
   src:
     url("../fonts/opensans.woff") format("woff");
     url("../fonts/opensans.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: OpenSans-Light;
+  font-family: "OpenSans-Light";
   src:
     url("../fonts/opensanslight.woff") format("woff");
     url("../fonts/opensanslight.woff2") format("woff2");
@@ -67,8 +67,7 @@
 }
 
 body {
-  min-height: 2755px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   font-family: "OpenSans-Light", "Arial", sans-serif;
@@ -494,6 +493,9 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  width: 78px;
+  min-height: 40px;
   margin: 0;
   margin-top: 5px;
   padding: 0;
@@ -506,6 +508,13 @@ a {
   margin: 0 auto;
   background: linear-gradient(180deg, #f8e297 142px, #ffffff 142px);
 }
+
+.slider-pagination-item {
+  width: 12px;
+  min-height: 40px;
+}
+
+
 
 .slides-list {
   padding: 0;
@@ -633,28 +642,41 @@ input:checked + .slide-content {
 }
 
 .pagination-slide-btn {
-  content: url("../img/slider-button-empty.svg");
+  /*content: url("../img/slider-button-empty.svg");*/
+  display: block;
+
+  background-image: url("../img/slider-button-empty.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  width: 14px;
+  min-height: 14px;
+  margin-top: 9px;
 }
 
 .slide-1-input:checked + .slide-content .pagination-slide-btn[for="slide-1"],
 .slide-2-input:checked + .slide-content .pagination-slide-btn[for="slide-2"],
 .slide-3-input:checked + .slide-content .pagination-slide-btn[for="slide-3"] {
-  content: url("../img/slider-button.svg");
+  /*content: url("../img/slider-button.svg");*/
+
+  background-image: url("../img/slider-button.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .slide-table {
   width: 560px;
   margin: 40px 0;
-  margin-top: 47px;
+  margin-top: 42px;
   margin-left: -2px;
 }
 
 .slide-3 .slide-table {
-  margin-top: 48px;
+  margin-top: 43px;
 }
 
 .slide-2 .slide-table {
-  margin-top: 48px;
+  margin-top: 43px;
 }
 
 .slide-2 td {
@@ -839,12 +861,18 @@ button span {
 }
 
 .catalog-item-name {
+  display: block;
+
   font-family: "Gilroy-ExtraBold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
   letter-spacing: 0.18px;
   color: #000000;
+}
+
+.section-catalog-item:nth-child(4) .catalog-item-name {
+  margin-right: -6px;
 }
 
 .services {
@@ -919,8 +947,8 @@ button span {
   width: 875px;
   margin: 0;
   padding: 0;
-  padding-left: 115px;
   padding-top: 70px;
+  padding-left: 115px;
 
   list-style: none;
 }
@@ -940,17 +968,31 @@ button span {
 
 .service-logo-wrapper {
   width: 260px;
+  min-height: 328px;
+}
+
+.delivery-slide .service-logo-wrapper {
   min-height: 318px;
+
+  background-image: url("../img/delivery-logo.svg");
+  background-repeat: no-repeat;
+  background-position: 58px 14px;
 }
 
-.delivery-logo {
-  margin-top: 14px;
-  margin-left: 58px;
-}
-
-.warranty-logo {
+.warranty-slide .service-logo-wrapper {
+  min-height: 327px;
   margin-top: -9px;
-  margin-left: 42px;
+
+  background-image: url("../img/warranty-logo.svg");
+  background-repeat: no-repeat;
+  background-position: 42px 0;
+}
+
+.credit-slide .service-logo-wrapper {
+  background-image: url("../img/credit-logo.svg");
+  background-repeat: no-repeat;
+  background-position: 34px 1px;
+  margin-top: -10px;
 }
 
 .credit-logo {
@@ -1006,14 +1048,21 @@ button span {
   margin-left: 2px;
 }
 
-.product-logo {
-  filter: grayscale(1);
-  opacity: 0.3;
+.product-logo-colorless {
+  display: block;
 }
 
-.product-logo:hover {
-  filter: none;
-  opacity: 1;
+.product-logo-colorful {
+  display: none;
+}
+
+.logotypes-item:hover .product-logo-colorless{
+  display: none;
+}
+
+.logotypes-item:hover .product-logo-colorful,
+.product-logo-colorful:hover{
+  display: block;
 }
 
 .about-us {
@@ -1126,10 +1175,10 @@ button span {
 .footer-wrapper {
   box-sizing: border-box;
 
+  width: 1200px;
   margin: 0 auto;
-  padding: 60px 140px;
+  padding: 60px 20px;
   padding-bottom: 30px;
-  width: 1440px;
 }
 
 .footer-main {
@@ -1145,6 +1194,8 @@ button span {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  width: 1160px;
 
   margin-bottom: 35px;
 }
@@ -1208,9 +1259,9 @@ button span {
   justify-content: space-between;
 
   width: 141px;
-  margin: 0;
   margin-top: 2px;
   margin-left: 509px;
+  margin-right: 483px;
   padding: 0;
 }
 
@@ -1703,10 +1754,6 @@ button span {
   width: 160px;
 }
 
-.catalog-item-name {
-  display: block;
-}
-
 .section-catalog-item:nth-child(2) .catalog-item-name {
   width: 120px;
 }
@@ -1750,6 +1797,10 @@ button span {
   font-size: 18px;
   line-height: 23px;
   letter-spacing: 0.18px;
+}
+
+.catalog-item:nth-child(3) h3 {
+  margin-right: -5px;
 }
 
 .catalog-item-price {
@@ -1889,9 +1940,11 @@ button span {
   width: 328px;
 }
 
-.price-filter::before,
-.color-filter::before,
-.bluetooth-filter::before {
+.filters legend {
+  position: relative;
+}
+
+.filters legend::after {
   content: "";
   position: absolute;
 
@@ -1902,6 +1955,7 @@ button span {
 
   background-color: #000000;
 }
+
 
 .price-filter {
   position: relative;
@@ -1931,6 +1985,7 @@ button span {
 }
 
 .price-filter input {
+  height: 24px;
   width: 65px;
   margin: 0;
 
@@ -1963,7 +2018,9 @@ button span {
 }
 
 .range-toggle {
-  content: url("../img/filter-button.svg");
+  content: "";
+  background-image: url("../img/filter-button.svg");
+  background-repeat: no-repeat;
   position: absolute;
   top: -10px;
 
@@ -2356,11 +2413,13 @@ button span {
   cursor: pointer;
 }
 
-.modal-close:hover {
+.modal-write-us-close:hover,
+.modal-map-close:hover {
   opacity: 1;
 }
 
-.modal-close:active {
+.modal-write-us-close:active,
+.modal-map-close:active {
   opacity: 0.3;
 }
 

@@ -44,6 +44,8 @@
   form.addEventListener("submit", function (evt) {
     if (!userName.value || !userEmail.value) {
       evt.preventDefault();
+      popup.classList.remove("modal-error");
+      popup.offsetWidth = popup.offsetWidth;
       popup.classList.add("modal-error");
       console.log("Надо написать имя и почту");
     }
