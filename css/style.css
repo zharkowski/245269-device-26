@@ -2317,6 +2317,7 @@ button span {
 
 .modal {
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+  z-index: 10;
 }
 
 .modal-write-us {
