@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-compressed.css">
   </head>
   <body class="inner-page">
     <header class="header-main">
@@ -42,7 +42,7 @@
                 <li class="dropdown-column">
                   <ul>
                     <li class="dropdown-element">
-                      <a href="#">Виртуальная реальность</a>
+                      <a href="#"  tabindex="0">Виртуальная реальность</a>
                     </li>
                     <li class="dropdown-element">
                       <a>Моноподы для селфи</a>
@@ -108,32 +108,30 @@
               <span>Фильтр:</span>
             </div>
             <section class="sorting">
-              <h2 class="sorting-title">
-                Сортировка:
-              </h2>
+              <h2 class="sorting-title">Сортировка:</h2>
               <ul class="sorting-types-list">
                 <li class="sorting-by-price">
                   <input class="sorting-type-radio" id="sorting-price-radio" type="radio" name="sorting-type" value="by-price" checked>
-                  <label for="sorting-price-radio">По цене</label>
+                  <label for="sorting-price-radio" tabindex="0">По цене</label>
                 </li>
                 <li class="sorting-by-type">
                   <input class="sorting-type-radio" id="sorting-type-radio" type="radio" name="sorting-type" value="by-type">
-                  <label for="sorting-type-radio">По типу</label>
+                  <label for="sorting-type-radio" tabindex="0">По типу</label>
                 </li>
                 <li class="sorting-by-popularity">
                   <input class="sorting-type-radio" id="sorting-popularity-radio" type="radio" name="sorting-type" value="by-popularity">
-                  <label for="sorting-popularity-radio">По популярности</label>
+                  <label for="sorting-popularity-radio" tabindex="0">По популярности</label>
                 </li>
               </ul>
 
               <ul class="sorting-order-list">
                 <li class="sorting-usual-order">
                   <input class="sorting-order-radio" id="usual-order-radio" type="radio" name="sorting-order" value="usual-order">
-                  <label for="usual-order-radio"><img class="usual-order" src="img/icon-up-dir.svg" width="11" height="10" alt="обычный порядок"></label>
+                  <label for="usual-order-radio" tabindex="0"><img class="usual-order" src="img/icon-up-dir.svg" width="11" height="10" alt="обычный порядок"></label>
                 </li>
                 <li class="sorting-reverse-order">
                   <input class="sorting-order-radio" id="reverse-order-radio" type="radio" name="sorting-order" value="reverse-order" checked>
-                  <label for="reverse-order-radio"><img class="reverse-order" src="img/icon-down-dir.svg" width="11" height="10" alt="обратный порядок"></label>
+                  <label for="reverse-order-radio" tabindex="0"><img class="reverse-order" src="img/icon-down-dir.svg" width="11" height="10" alt="обратный порядок"></label>
                 </li>
               </ul>
             </section>
@@ -151,8 +149,8 @@
                     <div class="scale">
                       <div class="bar"></div>
                     </div>
-                    <div class="range-toggle range-toggle-min"></div>
-                    <div class="range-toggle range-toggle-max"></div>
+                    <div class="range-toggle range-toggle-min" aria-label="Ползунок минимальной цены" tabindex="0"></div>
+                    <div class="range-toggle range-toggle-max" aria-label="Ползунок максимальной цены" tabindex="0"></div>
                   </div>
                   <div class="price-controls">
                     <label class="min-price">от <input type="text" name="min-price" placeholder="0"></label>
@@ -165,23 +163,23 @@
                 <ul class="color-list">
                   <li class="color-item">
                     <input class="color-checkbox" id="color-black-id" type="checkbox" name="color-black" checked>
-                    <label for="color-black-id">Черный</label>
+                    <label for="color-black-id" tabindex="0">Черный</label>
                   </li>
                   <li class="color-item">
                     <input class="color-checkbox" id="color-white-id" type="checkbox" name="color-white">
-                    <label for="color-white-id">Белый</label>
+                    <label for="color-white-id" tabindex="0">Белый</label>
                   </li>
                   <li class="color-item">
                     <input class="color-checkbox" id="color-blue-id" type="checkbox" name="color-blue" checked>
-                    <label for="color-blue-id">Синий</label>
+                    <label for="color-blue-id" tabindex="0">Синий</label>
                   </li>
                   <li class="color-item">
                     <input class="color-checkbox" id="color-red-id" type="checkbox" name="color-red" checked>
-                    <label for="color-red-id">Красный</label>
+                    <label for="color-red-id" tabindex="0">Красный</label>
                   </li>
                   <li class="color-item">
                     <input class="color-checkbox" id="color-pink-id" type="checkbox" name="color-pink">
-                    <label for="color-pink-id">Розовый</label>
+                    <label for="color-pink-id" tabindex="0">Розовый</label>
                   </li>
                 </ul>
               </fieldset>
@@ -190,11 +188,11 @@
                 <ul class="bluetooth-list">
                   <li class="bluetooth-item">
                     <input class="bluetooth-radio" id="bluetooth-on-id" type="radio" name="bluetooth" value="on" checked>
-                    <label for="bluetooth-on-id">Есть</label>
+                    <label for="bluetooth-on-id" tabindex="0">Есть</label>
                   </li>
                   <li class="bluetooth-item">
                     <input class="bluetooth-radio" id="bluetooth-off-id" type="radio" name="bluetooth" value="off">
-                    <label for="bluetooth-off-id">Нет</label>
+                    <label for="bluetooth-off-id" tabindex="0">Нет</label>
                   </li>
                 </ul>
               </fieldset>
@@ -214,7 +212,7 @@
                       </div>
                     </div>
                     <div class="item-wrapper">
-                      <h3>Любительская селфи-палка</h3>
+                      <h3><a href="#">Любительская селфи-палка</a></h3>
                       <span class="catalog-item-price">500 руб.</span>
                     </div>
                   </li>
@@ -227,7 +225,7 @@
                       </div>
                     </div>
                     <div class="item-wrapper">
-                      <h3>Профессиональная селфи-палка </h3>
+                      <h3><a href="#">Профессиональная селфи-палка</a></h3>
                       <span class="catalog-item-price">1 500 руб.</span>
                     </div>
                   </li>
@@ -240,7 +238,7 @@
                       </div>
                     </div>
                     <div class="item-wrapper">
-                      <h3>Непотопляемая селфи-палка</h3>
+                      <h3><a href="#">Непотопляемая селфи-палка</a></h3>
                       <span class="catalog-item-price">2 500 руб.</span>
                     </div>
                   </li>
@@ -253,7 +251,7 @@
                       </div>
                     </div>
                     <div class="item-wrapper">
-                      <h3>Селфи-палка «Следуй за мной»</h3>
+                      <h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
                       <span class="catalog-item-price">4 900 руб.</span>
                     </div>
                   </li>
@@ -283,7 +281,6 @@
           </div>
         </div>
       </section>
-
     </main>
 
     <footer class="footer-main">
