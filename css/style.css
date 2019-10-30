@@ -123,7 +123,7 @@ a {
   box-sizing: border-box;
   position: relative;
   width: 1044px;
-  padding: 34px 58px;
+  padding: 22px 58px;
   padding-bottom: 15px;
 }
 
@@ -134,24 +134,20 @@ a {
 .header-main {
   width: 1160px;
   margin: 0 auto;
-  margin-top: 40px;
 
-  background-color: #f8e297;
+  background: linear-gradient(180deg, #ffffff 40px, #f8e297 40px);
+}
+
+.inner-page .header-main {
+  min-height: 226px;
 }
 
 .header-logo-wrapper {
-  position: absolute;
-  width: 163px;
+  width: 164px;
   height: 36px;
   padding: 0;
   margin: 0;
-  margin-bottom: 20px;
-  top: -18px;
-  left: 57px;
-}
-
-.inner-page .header-logo-wrapper {
-  left: 59px;
+  margin-bottom: 16px;
 }
 
 .main-header-logo:hover {
@@ -426,7 +422,7 @@ a {
   margin: 0;
   padding: 15px 60px;
   width: 1160px;
-  min-height: 158px;
+  min-height: 157px;
   left: -58px;
 
   background-color: #f8e297;
@@ -471,6 +467,7 @@ a {
   position: relative;
 
   width: 260px;
+  max-width: 260px;
   margin-right: auto;
   padding-left: 1px;
 }
@@ -566,7 +563,7 @@ a {
   position: relative;
   padding-top: 95px;
   width: 561px;
-  height: 518px;
+  min-height: 518px;
 }
 
 .slide-info-wrapper::before {
@@ -670,7 +667,6 @@ input:checked + .slide-content {
 }
 
 .pagination-slide-btn {
-  /*content: url("../img/slider-button-empty.svg");*/
   display: block;
 
   background-image: url("../img/slider-button-empty.svg");
@@ -685,8 +681,6 @@ input:checked + .slide-content {
 .slide-1-input:checked + .slide-content .pagination-slide-btn[for="slide-1"],
 .slide-2-input:checked + .slide-content .pagination-slide-btn[for="slide-2"],
 .slide-3-input:checked + .slide-content .pagination-slide-btn[for="slide-3"] {
-  /*content: url("../img/slider-button.svg");*/
-
   background-image: url("../img/slider-button.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -777,7 +771,7 @@ input:checked + .slide-content {
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  height: 40px;
+  min-height: 40px;
   padding: 8px 20px;
 
   font-family: "Gilroy-ExtraBold", "Arial", sans-serif;
@@ -791,13 +785,13 @@ input:checked + .slide-content {
   border: none;
 
   background: -o-linear-gradient(bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
-
   background: linear-gradient(0deg, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
 
   cursor: pointer;
 }
 
-button span {
+.button span,
+.compare-button {
   cursor: pointer;
 }
 
@@ -1069,7 +1063,7 @@ button span {
   width: 1160px;
   margin-top: 94px;
   margin-right: auto;
-  margin-bottom: 84px;
+  margin-bottom: 93px;
   margin-left: auto;
 }
 
@@ -1135,6 +1129,10 @@ button span {
 
 .about-us::before {
   left: 1px;
+}
+
+.contacts::before {
+  margin-left: 2px;
 }
 
 .about-us h2,
@@ -1207,6 +1205,8 @@ button span {
 }
 
 .map-wrapper {
+  display: block;
+
   margin-top: 39px;
   margin-left: 2px;
   width: 560px;
@@ -1215,7 +1215,9 @@ button span {
   cursor: pointer;
 }
 
-.contacts .button {
+.write-us-link {
+  display: block;
+
   width: 260px;
   margin-top: 69px;
   margin-left: 2px;
@@ -1290,13 +1292,6 @@ button span {
 .inner-page .footer-logo-wrapper {
   margin-top: 0;
   margin-left: -1px;
-}
-
-.htmlacademy-logo-wrapper {
-  margin: 0;
-  padding: 0;
-  width: 27px;
-  height: 36px;
 }
 
 .footer-logo:hover,
@@ -2067,7 +2062,22 @@ button span {
   padding-top: 2px;
 }
 
-.sorting-order-list label {
+.sorting-types-list a,
+.sorting-order-list a {
+  line-height: 65px;
+
+  color: #000000;
+  opacity: 0.3;
+
+  cursor: pointer;
+}
+
+.current-type a,
+.current-order a {
+  opacity: 1;
+}
+
+.sorting-order-list a {
   line-height: 65px;
 
   cursor: pointer;
@@ -2300,16 +2310,19 @@ button span {
   position: relative;
 
   width: 360px;
-  height: 475px;
-  margin-bottom: 20px;
-  margin-top: 11px;
+  /*min-height: 475px;*/
+  /*margin-bottom: 20px;*/
+  margin-top: 9px;
 }
 
 .catalog-item .catalog-item-price {
+  display: block;
+
   width: 100px;
 
   line-height: 58px;
   text-align: right;
+  white-space: nowrap;
 }
 
 .catalog-item:nth-child(2) .catalog-item-price {
@@ -2375,7 +2388,7 @@ button span {
   margin-top: 7px;
 }
 
-.compare-button .compare-span{
+.compare-button {
   font-family: "OpenSans-Light", "Arial", sans-serif;
   font-size: 13px;
   line-height: 36px;
@@ -2384,11 +2397,11 @@ button span {
   color: #000000;
 }
 
-.compare-button .compare-span:hover {
+.compare-button:hover {
   opacity: 1;
 }
 
-.compare-button .compare-span:active {
+.compare-button:active {
   opacity: 0.2;
 }
 
@@ -2461,7 +2474,7 @@ button span {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 
-  width: 40px;
+  min-width: 40px;
   padding-top: 2px;
 
   text-align: center;

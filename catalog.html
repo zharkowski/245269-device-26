@@ -110,28 +110,23 @@
             <section class="sorting">
               <h2 class="sorting-title">Сортировка:</h2>
               <ul class="sorting-types-list">
-                <li class="sorting-by-price">
-                  <input class="sorting-type-radio" id="sorting-price-radio" type="radio" name="sorting-type" value="by-price" checked>
-                  <label for="sorting-price-radio" tabindex="0">По цене</label>
+                <li class="sorting-by-price current-type">
+                  <a href="#">По цене</a>
                 </li>
                 <li class="sorting-by-type">
-                  <input class="sorting-type-radio" id="sorting-type-radio" type="radio" name="sorting-type" value="by-type">
-                  <label for="sorting-type-radio" tabindex="0">По типу</label>
+                   <a href="#">По типу</a>
                 </li>
                 <li class="sorting-by-popularity">
-                  <input class="sorting-type-radio" id="sorting-popularity-radio" type="radio" name="sorting-type" value="by-popularity">
-                  <label for="sorting-popularity-radio" tabindex="0">По популярности</label>
+                  <a href="#">По популярности</a>
                 </li>
               </ul>
 
               <ul class="sorting-order-list">
                 <li class="sorting-usual-order">
-                  <input class="sorting-order-radio" id="usual-order-radio" type="radio" name="sorting-order" value="usual-order">
-                  <label for="usual-order-radio" tabindex="0"><img class="usual-order" src="img/icon-up-dir.svg" width="11" height="10" alt="обычный порядок"></label>
+                  <a href="#"><img class="usual-order" src="img/icon-up-dir.svg" width="11" height="10" alt="обычный порядок"></a>
                 </li>
-                <li class="sorting-reverse-order">
-                  <input class="sorting-order-radio" id="reverse-order-radio" type="radio" name="sorting-order" value="reverse-order" checked>
-                  <label for="reverse-order-radio" tabindex="0"><img class="reverse-order" src="img/icon-down-dir.svg" width="11" height="10" alt="обратный порядок"></label>
+                <li class="sorting-reverse-order current-order">
+                  <a href="#"><img class="reverse-order" src="img/icon-down-dir.svg" width="11" height="10" alt="обратный порядок"></a>
                 </li>
               </ul>
             </section>
@@ -208,7 +203,7 @@
                       <img src="img/item-1.png" width="360" height="380" alt="Любительская селфи-палка">
                       <div class="item-buttons-wrapper">
                         <button class="button to-cart-button"><span class="to-cart">В корзину</span></button>
-                        <button class="compare-button"><span class="compare-span">Добавить к сравнению</span></button>
+                        <button class="compare-button">Добавить к сравнению</button>
                       </div>
                     </div>
                     <div class="item-wrapper">
@@ -221,7 +216,7 @@
                       <img src="img/item-2.png" width="360" height="380" alt="Профессиональная селфи-палка ">
                       <div class="item-buttons-wrapper">
                         <button class="button to-cart-button"><span class="to-cart">В корзину</span></button>
-                        <button class="compare-button"><span class="compare-span">Добавить к сравнению</span></button>
+                        <button class="compare-button">Добавить к сравнению</button>
                       </div>
                     </div>
                     <div class="item-wrapper">
@@ -234,7 +229,7 @@
                       <img src="img/item-3.png" width="360" height="380" alt="Непотопляемая селфи-палка">
                       <div class="item-buttons-wrapper">
                         <button class="button to-cart-button"><span class="to-cart">В корзину</span></button>
-                        <button class="compare-button"><span class="compare-span">Добавить к сравнению</span></button>
+                        <button class="compare-button">Добавить к сравнению</button>
                       </div>
                     </div>
                     <div class="item-wrapper">
@@ -247,7 +242,7 @@
                       <img src="img/item-4.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                       <div class="item-buttons-wrapper">
                         <button class="button to-cart-button"><span class="to-cart">В корзину</span></button>
-                        <button class="compare-button"><span class="compare-span">Добавить к сравнению</span></button>
+                        <button class="compare-button">Добавить к сравнению</button>
                       </div>
                     </div>
                     <div class="item-wrapper">
@@ -323,11 +318,9 @@
             <li><a href="#"><img src="img/instagram.svg" alt="https://www.instagram.com/htmlacademy/?hl=ru"></a></li>
             <li><a href="#"><img src="img/twitter.svg" alt="https://twitter.com/htmlacademy_ru"></a></li>
           </ul>
-          <div class="htmlacademy-logo-wrapper">
-            <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy">
-            </a>
-          </div>
+          <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy">
+          </a>
         </div>
       </div>
     </footer>
