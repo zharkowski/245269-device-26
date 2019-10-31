@@ -396,6 +396,10 @@ a {
   width: 1160px;
 }
 
+.site-nav-element {
+  margin-left: 30px;
+}
+
 .site-nav-element a {
   font-family: "Gilroy-ExtraBold", "Arial", sans-serif;
   font-size: 18px;
@@ -469,6 +473,7 @@ a {
   width: 260px;
   max-width: 260px;
   margin-right: auto;
+  margin-left: 0;
   padding-left: 1px;
 }
 
@@ -513,7 +518,6 @@ a {
   width: 78px;
   min-height: 40px;
   margin: 0;
-  margin-top: 5px;
   padding: 0;
 
   list-style: none;
@@ -593,7 +597,7 @@ input:checked + .slide-content {
 .slide-number {
   position: absolute;
   top: 17px;
-  right: 46px;
+  right: 48px;
 
   font-family: "Gilroy-ExtraBold", "Arial", sans-serif;
   font-size: 179px;
@@ -675,7 +679,7 @@ input:checked + .slide-content {
 
   width: 14px;
   min-height: 14px;
-  margin-top: 9px;
+  margin-top: 14px;
 }
 
 .slide-1-input:checked + .slide-content .pagination-slide-btn[for="slide-1"],
@@ -689,7 +693,7 @@ input:checked + .slide-content {
 .slide-table {
   width: 560px;
   margin: 40px 0;
-  margin-top: 42px;
+  margin-top: 47px;
   margin-left: -2px;
 }
 
@@ -809,9 +813,7 @@ input:checked + .slide-content {
   padding-left: 25px;
 
   color: #000000;
-
-  background: -o-linear-gradient(bottom, transparent calc(50% - 1px), #f0c52e calc(50% - 1px), #f0c52e calc(50% + 7px), transparent calc(50% + 7px));
-  background: linear-gradient(0deg, transparent calc(50% - 1px), #f0c52e calc(50% - 1px), #f0c52e calc(50% + 7px), transparent calc(50% + 7px));
+  line-height: 24px;
 }
 
 .slide-button:active {
@@ -835,8 +837,10 @@ input:checked + .slide-content {
   border: none;
 }
 
-.services-button:focus {
-  /*outline: -moz-default-color;*/
+.services-button:active {
+  color: #f7e184;
+
+  background-color: #000000;
 }
 
 .delivery-button {
